@@ -1,0 +1,73 @@
+    /* Css general */
+*{
+  font-family: 'Roboto';
+  margin: auto !important ;
+  padding: auto !important  ;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               /* Ancho de scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #E2E2DF;        /* Color de fondo */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #C5C5BF;    /* color de la barra */
+  border-radius: 20px;       /* radio de la barra */
+  border: 3px solid #E2E2DF;  /* padding al rededor de la barra */
+}
+
+.app{
+  height: 100vh;
+  width: 100%;
+}
+
+.tituloApp{
+  margin-top: 50%;
+  font-size: 5vw;
+  text-align: center;
+  font-weight: 900;
+  color: #353239; /* No es el color del titulo, eso esta en SplitText.css */
+}
+
+    /* Home.css */
+
+.home{
+  background-color: #DBCDF0;
+  height: 100%;
+  width: 100%;
+}
+
+    /* About.css */
+
+.about{
+  background-color: #C6DEF1;
+  height: 100vh;
+  width: 100%;
+}
+    /* Projects.css */
+
+.projects{
+  background-color: #C9E4DE;
+  height: 100vh;
+  width: 100%;
+}
+
+    /* Skills.css */
+
+.skills{
+  background-color: #FAEDCB;
+  height: 100vh;
+  width: 100%;
+}
+
+    /* Contact.css */
+
+.contact{
+  background-color: #F9C6C9;
+  height: 100vh;
+  width: 100%;
+}
+
