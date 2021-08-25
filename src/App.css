@@ -24,6 +24,14 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
 }
 
+    /* Home.css */
+
+.home{
+  background-color: #DBCDF0;
+  height: 100%;
+  width: 100%;
+}
+
 .tituloApp{
   margin-top: 50%;
   font-size: 5vw;
@@ -32,12 +40,23 @@ body::-webkit-scrollbar-thumb {
   color: #353239; /* No es el color del titulo, eso esta en SplitText.css */
 }
 
-    /* Home.css */
+.descripcionHome{
+  padding-top: 5%;
+  padding-left: 0.5%;
+  width: 50%;
+}
 
-.home{
-  background-color: #DBCDF0;
-  height: 100%;
+.descripcionHomeText{
+  font-weight: 400;
+  font-size: 1.9vw;
+  color: #641741;
+}
+
+.flecha{
+  display: inline-block;
+  position: relative;
   width: 100%;
+  vertical-align: middle;
 }
 
     /* About.css */

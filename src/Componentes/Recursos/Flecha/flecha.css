@@ -1,0 +1,28 @@
+svg {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  svg .draw-arrow {
+    display: inline-block;
+    stroke-width: 10;
+    stroke: #641741;
+    fill: none;
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-name: draw;
+  }
+  svg .draw-arrow.tail-1 {
+    animation-delay: 2.3s;
+  }
+  svg .draw-arrow.tail-2 {
+    animation-delay: 2.3s
+  }
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+   }
+  }
