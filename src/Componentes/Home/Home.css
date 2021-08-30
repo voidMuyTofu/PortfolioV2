@@ -1,0 +1,62 @@
+.home{
+    background-color: #DBCDF0;
+    height: 100%;
+    width: 100%;
+}
+ 
+.wrapper-home{
+    padding-top: 4%;
+}
+ 
+.fontAnimation{
+    font-size: 5vw;
+    text-align: center;
+    font-weight: 900;
+    color: #641741; /* No es el color del titulo, eso esta en SplitText.css */
+}
+ 
+@media only screen and (max-width: 600px) {
+    .wrapper-home{
+      padding-top: 60%;
+    }
+}
+ 
+@media only screen and (max-width: 768px) {
+    .wrapper-home{
+      padding-top: 30%;
+    }
+}
+ 
+@media only screen and (max-width: 992px) {
+    .wrapper-home{
+      padding-top: 20%;
+    }
+}
+  
+ @media only screen and (max-width: 1200px) {
+    .wrapper-home{
+      padding-top: 10%;
+    }
+}
+  
+  
+.descripcionHome{
+    padding-top: 5%;
+    padding-left: 0.5%;
+    width: 60%;
+}
+  
+.descripcionHomeText{
+    font-weight: 400;
+    font-size: 1.9vw;
+    color: #641741;
+}
+  
+.flecha{
+    cursor: pointer;
+    padding-top: 5%;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
+}

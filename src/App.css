@@ -4,6 +4,10 @@
   margin: auto !important ;
   padding: auto !important  ;
 }
+html{
+  margin: 0;
+  padding: 0;
+}
 
 body::-webkit-scrollbar {
   width: 12px;               /* Ancho de scrollbar */
@@ -24,41 +28,6 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
 }
 
-    /* Home.css */
-
-.home{
-  background-color: #DBCDF0;
-  height: 100%;
-  width: 100%;
-}
-
-.tituloApp{
-  margin-top: 50%;
-  font-size: 5vw;
-  text-align: center;
-  font-weight: 900;
-  color: #353239; /* No es el color del titulo, eso esta en SplitText.css */
-}
-
-.descripcionHome{
-  padding-top: 5%;
-  padding-left: 0.5%;
-  width: 50%;
-}
-
-.descripcionHomeText{
-  font-weight: 400;
-  font-size: 1.9vw;
-  color: #641741;
-}
-
-.flecha{
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  vertical-align: middle;
-}
-
     /* About.css */
 
 .about{
@@ -66,12 +35,9 @@ body::-webkit-scrollbar-thumb {
   height: 100vh;
   width: 100%;
 }
-    /* Projects.css */
 
-.projects{
-  background-color: #C9E4DE;
-  height: 100vh;
-  width: 100%;
+.tituloAbout{
+
 }
 
     /* Skills.css */
@@ -89,4 +55,3 @@ body::-webkit-scrollbar-thumb {
   height: 100vh;
   width: 100%;
 }
-

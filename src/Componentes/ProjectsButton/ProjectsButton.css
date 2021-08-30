@@ -1,0 +1,26 @@
+.parent {
+    background: white;
+    width: 10%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    text-overflow: ellipsis;
+}
+  
+.parent[data-isOpen="true"] {
+    position: relative;
+    top: -33%;
+    width: 95%;
+    height: 95%;
+    text-align: right;
+}
+  
+.child {
+    width: 40px;
+    height: 40px;
+    background: #f107a3;
+    border-radius: 50%;
+}
+  

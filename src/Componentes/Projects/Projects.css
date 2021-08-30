@@ -1,0 +1,16 @@
+.projects{
+    background-color: #C9E4DE;
+    height: 100vh;
+    width: 100%;
+  }
+  
+.tituloProjects{
+    color: #1B3630;
+    font-size: 5vw;
+}
+.descripcionProjects{
+    font-weight: 400;
+    font-size: 1.9vw;
+    color: #1B3630;
+    padding-bottom: 15%;
+}
