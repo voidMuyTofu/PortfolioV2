@@ -11,11 +11,11 @@
 .tag{
     margin: 0px 3px !important;
     padding: 4px 8px;
-    border: 1px solid #e5eaed;
+    border: 1px solid #99FF85;
     border-radius: 50px;
     font-size: 1.5vh;
     font-weight: 600;
-    color: #788697;
+    color: #1BA300;
 }
 .name{
     font-size: 3.5vh;
@@ -26,7 +26,7 @@
 p{
     padding: 12px 5px;
     font-size: 1.9vh;
-    color: #7f8c9b;
+    color: #1B3630;
     line-height: 150%;
 }
 button{
@@ -37,15 +37,23 @@ button{
     font-weight: 600;
     font-size: 2vh;
     color: #1B3630;
-    background-color: #C9E4DE;
+    background-color: #CAFFBF;
     margin : 6px auto !important;
     display: block;
     cursor: pointer;
+}
+button:focus,
+button:hover{
+    color: #CAFFBF;
+    background-color: #1B3630;
 }
 img{
     width: 100%;
     border-radius: 12px;
     height: auto;
     object-fit: cover;
-    margin-bottom: 10px !important;
+    margin-bottom: 15px !important;
+}
+a:visited{
+    text-decoration: none;
 }

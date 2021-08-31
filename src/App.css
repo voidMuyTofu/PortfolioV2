@@ -30,11 +30,7 @@ body::-webkit-scrollbar-thumb {
 
     /* About.css */
 
-.about{
-  background-color: #C6DEF1;
-  height: 100vh;
-  width: 100%;
-}
+
 
 .tituloAbout{
 
@@ -43,7 +39,7 @@ body::-webkit-scrollbar-thumb {
     /* Skills.css */
 
 .skills{
-  background-color: #FAEDCB;
+  background-color: #FFD6A5;
   height: 100vh;
   width: 100%;
 }
@@ -51,7 +47,7 @@ body::-webkit-scrollbar-thumb {
     /* Contact.css */
 
 .contact{
-  background-color: #F9C6C9;
+  background-color: #FFADAD;
   height: 100vh;
   width: 100%;
 }

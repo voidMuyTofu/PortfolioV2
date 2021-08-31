@@ -27,7 +27,7 @@ class Home extends React.Component {
                         className="descripcionHome"
                         initial={{ x: -1500 }}
                         animate={{ x: 0 }}
-                        transition={{ delay: 1.1, duration: 1.5 }}>
+                        transition={{ delay: 1.1, duration: 1.5, type: 'spring'}}>
                         <h2 className="descripcionHomeText">{descriptionHomeText}</h2>
                     </motion.div>
                     <div className="flecha" onClick={this.onClickFlecha}>
