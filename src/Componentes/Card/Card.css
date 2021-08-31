@@ -1,0 +1,51 @@
+.card{
+    background-color: white;
+    border: 1px solid #bacdd8;
+    padding: 8px;
+    display: inline-block;
+    border-radius: 12px;
+    margin-left: 5.1% !important;
+    margin-top: 2% !important;
+    width: 25%;
+}
+.tag{
+    margin: 0px 3px !important;
+    padding: 4px 8px;
+    border: 1px solid #e5eaed;
+    border-radius: 50px;
+    font-size: 1.5vh;
+    font-weight: 600;
+    color: #788697;
+}
+.name{
+    font-size: 3.5vh;
+    font-weight: 600;
+    padding-left: 5px;
+    padding-top: 16px;
+}
+p{
+    padding: 12px 5px;
+    font-size: 1.9vh;
+    color: #7f8c9b;
+    line-height: 150%;
+}
+button{
+    border: none;
+    margin: 10px 0px;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 2vh;
+    color: #1B3630;
+    background-color: #C9E4DE;
+    margin : 6px auto !important;
+    display: block;
+    cursor: pointer;
+}
+img{
+    width: 100%;
+    border-radius: 12px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px !important;
+}

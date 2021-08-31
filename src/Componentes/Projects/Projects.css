@@ -7,10 +7,16 @@
 .tituloProjects{
     color: #1B3630;
     font-size: 5vw;
+    padding-top: 3%;
+    padding-left: 3%;
 }
 .descripcionProjects{
     font-weight: 400;
     font-size: 1.9vw;
     color: #1B3630;
-    padding-bottom: 15%;
+    padding-left: 3%;
+    padding-top: 0.5%;
+}
+.cartas{
+    display: table-row;
 }
