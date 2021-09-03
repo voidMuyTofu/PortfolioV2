@@ -1,12 +1,19 @@
     /* Css general */
-*{
-  font-family: 'Roboto';
-  margin: auto !important ;
-  padding: auto !important  ;
-}
 html{
   margin: 0;
   padding: 0;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: 'DM Mono', monospace;
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+  margin: 0;
 }
 
 body::-webkit-scrollbar {
@@ -21,19 +28,6 @@ body::-webkit-scrollbar-thumb {
   background-color: #C5C5BF;    /* color de la barra */
   border-radius: 20px;       /* radio de la barra */
   border: 3px solid #E2E2DF;  /* padding al rededor de la barra */
-}
-
-.app{
-  height: 100vh;
-  width: 100%;
-}
-
-    /* About.css */
-
-
-
-.tituloAbout{
-
 }
 
     /* Skills.css */
