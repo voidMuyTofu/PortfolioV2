@@ -1,25 +1,60 @@
 import React from 'react'
 import './Projects.css';
-import Card from '../Card/Card';
-import { motion } from 'framer-motion';
 
 export default class Projects extends React.Component {
+
+    onWheel = (e) => {
+        e.preventDefault()
+        var container = document.getElementById('container')
+        var containerScrollPosition = document.getElementById('container').scrollLeft
+        container.scrollTo({
+            top: 0,
+            left: containerScrollPosition + e.deltaY,
+            behaviour: 'smooth' //if you want smooth scrolling
+        })
+    }
+
     render() {
         return (
             <div className="projects">
-                <motion.div
-                initial={{ x: -500 }}
-                animate={{ x: 0 }}
-                transition={{ delay: 1.1, duration: 1.5 }}>
-                <h1 className="tituloProjects">Projects</h1>
-                </motion.div>
-                
-                <h2 className="descripcionProjects">Both proffesional and personal projects I´ve worked on.</h2>
-                <div className="cartas">
-                    <Card />
-                    <Card />
-                    <Card />
-                </div>
+                <section id="container" onWheel={this.onWheel} className="card-list">
+                    <article className="card">
+                    <img src="https://logodownload.org/wp-content/uploads/2019/08/github-logo-2.png"></img>
+                    <figcaption class="figcaption">
+                        <p className="project-description">Check this website's repo on github to take a peek to the source code</p>
+                        <button>FFFFFFF</button>
+                    </figcaption> 
+                    </article>
+                    <article className="card">
+                        <h2>Sep 11th 2020</h2>
+                        <p>Card Tricks are fun!</p>
+                    </article>
+                    <article className="card">
+                        <h2>Sep 11th 2020</h2>
+                        <p>Card Tricks are fun!</p>
+                    </article>
+                    <article className="card">
+                        <h2>Sep 11th 2020</h2>
+                        <p>Card Tricks are fun!</p>
+                    </article>
+                    <article className="card">
+                        <h2>Sep 11th 2020</h2>
+                        <p>Card Tricks are fun!</p>
+                    </article>
+                    <article className="card">
+                        <h2>Sep 11th 2020</h2>
+                        <p>Card Tricks are fun!</p>
+                    </article>
+                    <article className="card">
+                        <h2>Sep 11th 2020</h2>
+                        <p>Card Tricks are fun!</p>
+                    </article>
+                    
+                    <article className="card">
+                        <h2>Sep 11th 2020</h2>
+                        <p>Card Tricks are fun!</p>
+                    </article>
+                </section>
             </div>
         );
     }

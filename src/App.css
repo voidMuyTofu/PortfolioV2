@@ -1,16 +1,31 @@
-    /* Css general */
-html{
-  margin: 0;
-  padding: 0;
+/* Variables */
+
+:root{
+  --text-color: #CAFFBF;
+  --bg-color: #1B3630;
+  --blob-home: #88FF70;
+  --c-white: #FFF
 }
-body{
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
-  font-family: 'DM Mono', monospace;
+
+.app{
   display: flex;
   flex-direction: column;
+  align-self: center;
 }
+
+html {
+  box-sizing: border-box;
+}
+*,*::before,*::after {
+  box-sizing: inherit;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
 
 h1{
   margin: 0;
@@ -25,23 +40,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #C5C5BF;    /* color de la barra */
+  background-color: #525252;    /* color de la barra */
   border-radius: 20px;       /* radio de la barra */
   border: 3px solid #E2E2DF;  /* padding al rededor de la barra */
-}
-
-    /* Skills.css */
-
-.skills{
-  background-color: #FFD6A5;
-  height: 100vh;
-  width: 100%;
-}
-
-    /* Contact.css */
-
-.contact{
-  background-color: #FFADAD;
-  height: 100vh;
-  width: 100%;
 }

@@ -1,22 +1,118 @@
 .projects{
-    background-color: #CAFFBF;
+    background: linear-gradient(170deg, var(--c-white) calc(73% - 1px), var(--bg-color) 73%);
     height: 100vh;
     width: 100%;
-  }
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 33px;
+}
+
+.card-list{
+    display: flex;
+    overflow-x:  scroll;
+}
+
+.card{
+    font-size: 2vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 150px;
+    width: 250px;
+    min-width: 200px;
+    margin: 2%;
+    background: var(--text-color);
+    color : var(--bg-color);
+    border-radius: 33px;
+    text-align: center;
+    -webkit-box-shadow: -5px 7px 15px 1px #000000; 
+    box-shadow: -0.7rem 0 1rem #000; /* -1rem mover en el eje x hacia la dere */
+}
+
+.card:not(:first-child){
+    margin-left: -7%;
+}
+
+.card:hover{
+    width: 250px;
+    min-width: 250px;
+    background: red;
+    transition: .4s;
+}
+
+.card:not(:hover){
+    transition: .4s;
+}
+
+.card:hover~.card{ /* el indicador ~ sirve para aplicar estilos a los componentes hermanos que esten por debajo de el pero no al el mismo */
+    transform: translateX(30%);
+}
+
+.figcaption {
+    font-size:1.7vw;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    text-align: left;
+    position: absolute;
+    opacity:0;
+    top: 0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: var(--text-color);
+    transition:all 0.4s ease;
+    border-radius: 33px;
   
-.tituloProjects{
-    color: #1B3630;
-    font-size: 5vw;
-    padding-top: 3%;
-    padding-left: 3%;
 }
-.descripcionProjects{
-    font-weight: 400;
-    font-size: 1.9vw;
-    color: #1B3630;
-    padding-left: 3%;
-    padding-top: 0.5%;
+
+.figcaption:hover{
+    opacity:1;
 }
-.cartas{
-    display: table-row;
+
+.project-description{
+    padding :1vw;
+}
+
+.card-list::-webkit-scrollbar {
+    width: 12px;               /* Ancho de scrollbar */
+}
+  
+.card-list::-webkit-scrollbar-track {
+    background: transparent;        /* Color de fondo */
+}
+  
+.card-list::-webkit-scrollbar-thumb {
+    background-color: var(--bg-color);   /* color de la barra */
+    border-radius: 20px;       /* radio de la barra */
+    border: 3px solid var(--c-white);  /* padding al rededor de la barra */
+}
+
+@media only screen and (min-width: 768px) {
+
+    .card{
+        font-size: 2.5vh;
+        height: 270px;
+        width: 400px;
+        min-width: 400px;
+    }
+
+    .card:hover{
+        width: 450px;
+        min-width: 450px;
+    }
+
+
+    .card-list{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .card:hover~.card{ /* el indicador ~ sirve para aplicar estilos a los componentes hermanos que esten por debajo de el pero no al el mismo */
+        transform: translateX(20%);
+    }
+    
 }

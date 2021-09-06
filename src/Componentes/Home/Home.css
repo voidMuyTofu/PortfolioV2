@@ -1,5 +1,108 @@
 .home{
-    background-color: #FFC6FF;
     height: 100vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.bg{
+    background-color: var(--bg-color);
+    overflow: hidden;
+}
+
+.wave-container {
+    position: absolute;
+    line-height: 0;
+}
+
+.wave-container > .svg {
+    height: 100px;
+    width: 170%;
+    transform-origin: top;
+    animation: animateWave 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+  
+@keyframes animateWave {
+    0% {
+        transform: scale(1,0);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+.fontAnimation-first{
+    margin-top: 30%;
+    font-size: 12vw;
+    text-align: center;
+    font-weight: 900;
+    color: var(--text-color);
+}
+
+.fontAnimation{
+    font-size: 12vw;
+    text-align: center;
+    font-weight: 900;
+    color: var(--text-color);
+}
+.descripcionHome{
+    width: 75%;
+    text-align: center;
+}
+
+.descripcionHomeText{
+    margin-top: 15%;
+    font-size: 2.7vh;
+    font-weight: 300;
+    color: var(--text-color);
+}
+
+.flecha{
+    display: inline-block;
+    position: relative;
+    height: 50%;
+    width: 100%;
+    vertical-align: middle;
+    margin-top: 10%;
+}
+
+@media only screen and (min-width: 768px) {
+    .fontAnimation{
+        font-size: 5vw;
+    }
+
+    .fontAnimation-first{
+        margin-top: 9%;
+        font-size: 5vw;
+    }
+    
+
+    .descripcionHomeText{
+        font-size: 3.2vh;
+        font-weight: 300;
+        margin-top: 4%;
+    }
+
+    .descripcionHome{
+        width: 55%;
+    }
+
+    .fontAnimation:first-child{
+        margin-top: 5%;
+    }
+    
+    .flecha{
+        margin-top: 1%;
+    }
+
+    .wave-container > .svg {
+        position: relative;
+        display: block;
+        height: 300px;
+        width: 170%;
+        transform-origin: top;
+        animation: animateWave 1400ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    }
+
 }

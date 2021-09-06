@@ -1,0 +1,130 @@
+@media only screen and (min-width: 768px) {
+
+    .blob1-svg{
+        height: 25%;
+        position: absolute;
+        overflow :visible;
+        transform: rotate(140deg);
+        margin-top:30%;
+        margin-right:50%;
+    }
+
+    .blob1{
+        fill: var(--blob-home);
+        opacity: 0.3;
+        animation: animateSvg 1400ms;
+        transform-origin: center;
+    }
+
+    .blob2-svg{
+        height: 30%;
+        position: absolute;
+        overflow :visible;
+        transform: rotate(140deg);
+        margin-top:29%;
+        margin-right:50%;
+        
+    }
+
+    .blob2{
+        fill: none;
+        stroke: var(--blob-home);
+        stroke-width: 0.7px;
+        opacity: 0.2;
+        animation: animateSvg 1400ms;
+        transform-origin: center;
+    }
+
+    .blob3-svg{
+        height: 35%;
+        position: absolute;
+        overflow :visible;
+        transform: rotate(140deg);
+        margin-top:28%;
+        margin-right:50%;
+    }
+
+    .blob3{
+        fill: none;
+        stroke: var(--blob-home);
+        stroke-width: 0.7px;
+        opacity: 0.2;
+        animation: animateSvg 1400ms;
+        transform-origin: center;
+    }
+
+    .blob4-svg{
+        height: 60%;
+        width: 50%;
+        position: absolute;
+        overflow :visible;
+        margin-left: 70%;
+        margin-top: 8%;
+        
+        
+    }
+
+    .blob4{
+        fill: var(--blob-home);
+        opacity: 0.2;
+        
+        animation: animateSvg 1400ms;
+        transform-origin: center;
+    }
+
+    .blob5-svg{
+        height: 70%;
+        width: 50%;
+        position: absolute;
+        overflow :visible;
+        margin-left: 70%;
+        margin-top: 5%;
+        
+    }
+
+    .blob5{
+        fill: none;
+        stroke: var(--blob-home);
+        stroke-width: 0.7px;
+        opacity: 0.2;
+        animation: animateSvg 1400ms;
+        transform-origin: center;
+    }
+
+    .blob6-svg{
+        position: absolute;
+        overflow :visible;
+        height: 80%;
+        width: 50%;
+        margin-left: 70%;
+        margin-top:3%;
+    }
+
+    .blob6{
+        fill: none;
+        stroke: var(--blob-home);
+        stroke-width: 0.7px;
+        opacity: 0.2;
+        animation: animateSvg 1400ms;
+        transform-origin: center;
+    }
+
+
+    @keyframes animateSvg {
+        0% {
+            transform: scaleY(0);
+        }
+        100% {
+            transform: scaleY(1);
+        }
+    }
+
+    @keyframes animateSvg2 {
+        0% {
+            transform: translate(65%, 0%)scale(0);
+        }
+        100% {
+            transform: translate(65%, 0%)scale(1);
+        }
+    }
+}
